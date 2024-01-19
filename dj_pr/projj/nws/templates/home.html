@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>                                                                         
+</head>
+<body>
+    <h1>Home Page</h1>
+     <a href="{% url 'logout' %}" >Logout</a>
+
+     <form action="/delete/{{ user_id }}" method="post">
+      {% csrf_token %}
+      <button type="submit">Delete</button>
+    </form>
